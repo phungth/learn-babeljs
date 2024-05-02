@@ -1,0 +1,30 @@
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-build": "webpack --mode development",
+    "babel-build": "babel src/main.js --out-dir dist",
+    "start": "node src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "7.0.0",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/polyfill": "^7.12.1",
+    "babel-loader": "^8.3.0",
+    "webpack": "^4.47.0",
+    "webpack-cli": "^4.9.2",
+    "core-js": "^2.5.0",
+    "browserslist": "^4.23.0",
+    "regenerator-runtime": "^0.10.5"
+  },
+  "dependencies": {
+    "connect": "^3.7.0",
+    "serve-static": "^1.15.0"
+  }
+}
